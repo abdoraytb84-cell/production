@@ -1,65 +1,140 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PRODUCTION MONDIAL</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f5f5f5;color:#222}
-header{background:#0a0a0a;color:white;padding:60px 20px;text-align:center}
-header h1{font-size:42px;letter-spacing:2px;color:#ffcc00}
-header p{margin-top:10px;font-size:18px;opacity:.9}
-.btn{display:inline-block;margin-top:25px;background:#ffcc00;color:#000;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold}
-section{padding:40px 20px;max-width:900px;margin:auto}
-h2{text-align:center;margin-bottom:25px;font-size:28px}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.card{background:white;padding:20px;border-radius:15px;box-shadow:0 2px 10px rgba(0,0,0,.08);text-align:center}
-.card h3{margin-bottom:8px}
-.card p{font-size:14px;color:#555}
-.about{background:white;border-radius:15px;padding:25px;text-align:center;line-height:1.7}
-.contact{background:#0a0a0a;color:white;border-radius:15px;padding:30px;text-align:center}
-.contact h2{color:#ffcc00}
-.contact a{display:inline-block;margin-top:15px;background:#25D366;color:white;padding:13px 25px;border-radius:30px;text-decoration:none;font-weight:bold}
-footer{text-align:center;padding:20px;font-size:13px;color:#888}
-@media(max-width:600px){header h1{font-size:30px}.cards{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PRODUCTION MONDIAL ACI.COM</title>
+<style>*{box-sizing:border-box;font-family:Arial}body{margin:0;background:#eef1f4;padding:10px}
+.top{background:#000;color:#fff;padding:14px;border-radius:10px;text-align:center;border:2px solid #e91e63}
+.top h1{margin:0;font-size:22px;letter-spacing:1px}.top span{font-size:12px;color:#ffd700}
+.card{background:#fff;padding:12px;border-radius:10px;margin-top:10px}
+label{font-weight:bold;font-size:13px}input,select,textarea{width:100%;padding:7px;margin:3px 0;border:1px solid #ccc;border-radius:6px}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{border:1px solid #333;padding:5px;text-align:center;vertical-align:top}th{background:#ddd}
+button{width:100%;padding:13px;border:0;border-radius:8px;background:#000;color:#fff;font-weight:bold;margin-top:8px}
+.g{background:#0a7a42}.o{background:#ff9800}.r{background:#d32f2f}.pink{background:#e91e63}
+.poste{background:#fff3a3;font-weight:bold}.fc2{background:#c8e6c9;font-weight:bold}
+details{text-align:left} summary{background:#eee;padding:8px;border:1px solid #ccc;border-radius:6px;cursor:pointer;font-weight:bold;font-size:12px}
+.ops{max-height:160px;overflow:auto;padding:5px;border:1px solid #ddd;border-top:0;background:#fff}
+.ops label{font-weight:normal;display:block;font-size:12px;line-height:2;white-space:nowrap}
+.ops input{width:auto;margin:0 5px 0 0}
+.chip{display:inline-block;background:#0a7a42;color:#fff;padding:4px 7px;border-radius:12px;font-size:11px;font-weight:bold;margin:2px}
+.chip-rep,.chip-abs{background:#d32f2f}
+.sel{min-height:28px}
+.refqte{display:flex;gap:4px;margin-bottom:4px}.refqte input{margin:0}
+.hidden{display:none}.total{font-size:16px;font-weight:bold;text-align:center}
+.zcard{border-left:5px solid #e91e63}
+.kpi{display:flex;gap:8px}.kpi div{flex:1;background:#fff;padding:12px;border-radius:10px;text-align:center}.kpi b{font-size:20px}
+@media print{button,.no-print{display:none}body{background:#fff} details summary{display:none} .ops{display:none}}
+</style></head><body>
+<div class="top"><h1>PRODUCTION MONDIAL ACI.COM</h1><span>Equipe: Yacine Eddarkaoui | Chef: RAITB ABDERRAHIM | Patronne: ZINEB</span></div>
 
-<header>
-<h1>PRODUCTION MONDIAL</h1>
-<p>Production Vidéo • Publicité • Contenu Professionnel</p>
-<a class="btn" href="#contact">Demander un Devis</a>
-</header>
-
-<section>
-<h2>Nos Services</h2>
-<div class="cards">
-<div class="card"><h3>🎬 Production Vidéo</h3><p>Clips, publicité, reportage, documentaire</p></div>
-<div class="card"><h3>📸 Photographie</h3><p>Shooting professionnel, produit, événement</p></div>
-<div class="card"><h3>📱 Contenu Réseaux</h3><p>Reels, TikTok, contenu viral pour votre marque</p></div>
-<div class="card"><h3>🎙️ Montage & Design</h3><p>Montage pro, logo, affiche, identité visuelle</p></div>
+<div id="login" class="card no-print">
+<label>شكون نتا؟</label>
+<select id="qui"><option>RAITB ABDERRAHIM - Chef</option><option>ZINEB - Patronne</option><option>CHABIBA MOHAMED</option><option>HOUNIFI AYOUB</option><option>MENOUAR MUSTAPHA</option><option>BOUARIS AHMED</option><option>EL ANBAR RACHID</option><option>MOHAMED SNANI</option><option>MOHAMMADINE YOUSSEF</option><option>BOUJIMANE ABDELLAH</option><option>ED-DAQOAQ MAHDI</option><option>EL AZZAB OUADIA</option><option>BOURHIM AHMED</option><option>EZZAHRAOUI HASNAA</option><option>MADINI HICHAM</option><option>RAITB YOUNESS</option><option>EL GARROUME ABDERRAHIM</option><option>DIOF SERIGNE ABIB</option><option>MOUTRAJI SAID</option><option>OUCHAN NABIL</option><option>ZENZOUM NAJIB</option><option>BENABLA ABDELHAFID</option><option>CHENNANI RAJAA</option><option>DANDOUNE CHAIMAE</option><option>BRIQECH YOUNES</option><option>MOHAMED EL KARI</option><option>HAMZA EL HAMD</option></select>
+<button onclick="entrer()">دخول / Entrer</button>
 </div>
-</section>
 
-<section>
-<div class="about">
-<h2>À Propos</h2>
-<p><b>PRODUCTION MONDIAL</b> est une agence de production créative au Maroc.<br>On transforme vos idées en vidéos qui attirent les clients et qui vendent.<br>Qualité professionnelle • Livraison rapide • Prix adapté.</p>
+<div id="zineb" class="hidden">
+<div class="card" style="background:#fce4ec"><h2 style="margin:0">👑 مرحبا مدام زينب - PRODUCTION MONDIAL ACI.COM</h2><p style="margin:5px 0 0">هنا كتشوفي كاع الوراق اللي عمروهم الشاف</p></div>
+<div class="kpi"><div>📅 Fiches<br><b id="kFiches">0</b></div><div>⚖️ Total Kg<br><b id="kTotal">0</b></div><div>👥 Absents اليوم<br><b id="kAbs">0</b></div></div>
+<div class="card"><label>قلب على نهار:</label><input type="date" id="filtreDate" onchange="voirZineb()"><button class="pink" onclick="voirZineb()">🔍 Voir</button><button onclick="effacer()">🗑️ مسح كاع الوراق</button></div>
+<div id="histZineb"></div>
+<button onclick="location.reload()">🔄 رجع للدخول</button>
 </div>
-</section>
 
-<section id="contact">
-<div class="contact">
-<h2>Contactez-Nous</h2>
-<p>Pour un projet, un devis ou une collaboration</p>
-<a href="https://wa.me/212600000000">WhatsApp Nous</a>
-<p style="margin-top:15px;font-size:14px;opacity:.7">Kenitra - Maroc • PRODUCTION MONDIAL</p>
+<div id="app" class="hidden">
+<div class="card"><label>DATE</label><input type="date" id="date"><label>SHIFT</label>
+<select id="shift"><option>7:00 -> 18:00</option><option>18:00 -> 7:00</option></select>
+<label>CHEF D'EQUIPE</label><input id="chef" value="RAITB ABDERRAHIM"></div>
+
+<div class="card"><table id="tab">
+<tr><th>Poste</th><th>Opérateurs</th><th>Référence + Quantité</th><th>Début</th><th>Fin</th><th>Diff.</th></tr>
+</table>
+<div class="total" id="total">TOTAL JOURNÉE : 0</div>
 </div>
-</section>
 
-<footer>© 2026 PRODUCTION MONDIAL - Tous droits réservés</footer>
+<div class="card"><label>Remarques :</label><textarea id="rem" rows="3">FC1 toujours en réparation
+FC2 travaille sur le déchet</textarea>
+<label>Liste Des Absents :</label>
+<details><summary id="sumAbs">Choisir les absents ▼</summary><div class="ops" id="absOps"></div></details>
+<div class="sel" id="selAbs"></div>
+</div>
 
-</body>
-</html>
+<div class="no-print">
+<button class="g" onclick="save()">✅ Valider - Envoyer à ZINEB</button>
+<button class="o" onclick="calc()">🔄 Calculer Total</button>
+<button onclick="window.print()">🖨️ Imprimer / PDF</button>
+<button class="r" onclick="voir()">📋 Voir mes fiches</button>
+<div id="hist"></div>
+</div></div>
+
+<script>
+const postes=[
+ {n:'PP1',c:'poste',ex:'TP8'},
+ {n:'PP2',c:'poste',ex:'TP8 / TP7 / TP6 / TP3'},
+ {n:'PP3',c:'poste',ex:'TP8 / TP7'},
+ {n:'PP4',c:'poste',ex:'TP8 / TP7'},
+ {n:'FC1',c:'poste',ex:'Ø 1.30'},
+ {n:'FC2 - Machine 1',c:'fc2',ex:'Ø 1.30 mm'},
+ {n:'FC2 - Machine 2',c:'fc2',ex:'Ø 1.30 mm'},
+ {n:'FC2 - Machine 3',c:'fc2',ex:'Ø 1.30 mm'},
+ {n:'FC2 - Machine 4',c:'fc2',ex:'Ø 1.30 mm'},
+ {n:'FC3',c:'poste',ex:'Ø 1.30'},
+];
+const noms=['En réparation','CHABIBA MOHAMED','HOUNIFI AYOUB','MENOUAR MUSTAPHA','BOUARIS AHMED','EL ANBAR RACHID','MOHAMED SNANI','MOHAMMADINE YOUSSEF','BOUJIMANE ABDELLAH','ED-DAQOAQ MAHDI','EL AZZAB OUADIA','BOURHIM AHMED','EZZAHRAOUI HASNAA','MADINI HICHAM','RAITB YOUNESS','EL GARROUME ABDERRAHIM','DIOF SERIGNE ABIB','MOUTRAJI SAID','OUCHAN NABIL','ZENZOUM NAJIB','BENABLA ABDELHAFID','CHENNANI RAJAA','DANDOUNE CHAIMAE','BRIQECH YOUNES','MOHAMED EL KARI','HAMZA EL HAMD'];
+const nomsAbs=['CHABIBA MOHAMED','HOUNIFI AYOUB','MENOUAR MUSTAPHA','BOUARIS AHMED','EL ANBAR RACHID','MOHAMED SNANI','MOHAMMADINE YOUSSEF','BOUJIMANE ABDELLAH','ED-DAQOAQ MAHDI','EL AZZAB OUADIA','BOURHIM AHMED','EZZAHRAOUI HASNAA','MADINI HICHAM','RAITB YOUNESS','EL GARROUME ABDERRAHIM','DIOF SERIGNE ABIB','MOUTRAJI SAID','OUCHAN NABIL','ZENZOUM NAJIB','BENABLA ABDELHAFID','CHENNANI RAJAA','DANDOUNE CHAIMAE','BRIQECH YOUNES','MOHAMED EL KARI','HAMZA EL HAMD'];
+let tab=document.getElementById('tab');
+postes.forEach((p,idx)=>{
+ let checks=noms.map(n=>`<label><input type="checkbox" onchange="upd(${idx})"> ${n}</label>`).join('');
+ let lignes='';
+ for(let i=0;i<4;i++){ lignes+=`<div class="refqte"><input placeholder="Réf - ${p.ex}" class="ref"><input placeholder="Qté" class="q" type="number" oninput="calc()"></div>`; }
+ tab.innerHTML+=`<tr><td class="${p.c}">${p.n}</td><td><details><summary id="sum${idx}">Choisir ▼</summary><div class="ops">${checks}</div></details><div class="sel" id="sel${idx}"></div></td><td>${lignes}</td><td><input class="d" type="number" placeholder="Kw"></td><td><input class="f" type="number" placeholder="Kw" oninput="calc()"></td><td class="diff">0</td></tr>`;
+});
+document.getElementById('absOps').innerHTML=nomsAbs.map(n=>`<label><input type="checkbox" onchange="updAbs()"> ${n}</label>`).join('');
+function upd(i){
+ let row=document.querySelectorAll('#tab tr')[i+1];
+ let boxes=row.querySelectorAll('input[type=checkbox]:checked');
+ let names=[...boxes].map(b=>b.parentNode.textContent.trim());
+ document.getElementById('sel'+i).innerHTML=names.map(n=>`<span class="chip ${n=='En réparation'?'chip-rep':''}">${n}</span>`).join(' ');
+ document.getElementById('sum'+i).innerText= names.length? names.length+' choisis - Modifier ▼' : 'Choisir ▼';
+}
+function updAbs(){
+ let boxes=document.querySelectorAll('#absOps input[type=checkbox]:checked');
+ let names=[...boxes].map(b=>b.parentNode.textContent.trim());
+ document.getElementById('selAbs').innerHTML=names.map(n=>`<span class="chip chip-abs">${n}</span>`).join(' ');
+ document.getElementById('sumAbs').innerText= names.length? names.length+' absents - Modifier ▼' : 'Choisir les absents ▼';
+}
+document.getElementById('date').valueAsDate=new Date();
+function entrer(){
+ let q=document.getElementById('qui').value;
+ document.getElementById('login').classList.add('hidden');
+ if(q.includes('ZINEB')){ document.getElementById('zineb').classList.remove('hidden'); voirZineb(); }
+ else{ document.getElementById('app').classList.remove('hidden'); }
+}
+function calc(){let t=0;document.querySelectorAll('#tab tr').forEach((r,i)=>{if(i==0)return;let qs=r.querySelectorAll('.q');qs.forEach(q=>{t+=parseFloat(q.value||0)});let d=r.querySelector('.d').value||0;let f=r.querySelector('.f').value||0;r.querySelector('.diff').innerText=(f-d)||0;});document.getElementById('total').innerText='TOTAL JOURNÉE : '+t; return t;}
+function collect(){
+ let lignes=[];
+ document.querySelectorAll('#tab tr').forEach((r,i)=>{if(i==0)return;
+  let poste=r.querySelector('td').innerText;
+  let ops=[...r.querySelectorAll('input[type=checkbox]:checked')].map(b=>b.parentNode.textContent.trim()).join(' + ');
+  let refs=[]; r.querySelectorAll('.refqte').forEach(l=>{let ref=l.querySelector('.ref').value;let q=l.querySelector('.q').value; if(ref||q) refs.push(ref+' = '+q);});
+  if(ops||refs.length) lignes.push(`<b>${poste}:</b> ${ops} <br> ${refs.join(' | ')}`);
+ });
+ let abs=[...document.querySelectorAll('#absOps input[type=checkbox]:checked')].map(b=>b.parentNode.textContent.trim()).join(', ');
+ return {lignes:lignes.join('<br>'), abs};
+}
+function save(){
+ let c=collect(); let t=calc();
+ let d={date:document.getElementById('date').value,shift:document.getElementById('shift').value,rem:document.getElementById('rem').value,total:t,detail:c.lignes,abs:c.abs};
+ let a=JSON.parse(localStorage.getItem('fiches')||'[]');a.push(d);localStorage.setItem('fiches',JSON.stringify(a));alert('تم التسجيل! مدام زينب تقدر تشوفها دابا');
+}
+function voir(){let a=JSON.parse(localStorage.getItem('fiches')||'[]');document.getElementById('hist').innerHTML=a.length?a.map(x=>`<div class="card">📅 ${x.date} | ${x.shift} | TOTAL: ${x.total}<br>${x.detail}<br><b>Absents:</b> ${x.abs}<br>${x.rem}</div>`).join(''):'<p>مازال حتى ورقة</p>';}
+function voirZineb(){
+ let a=JSON.parse(localStorage.getItem('fiches')||'[]');
+ let f=document.getElementById('filtreDate').value;
+ if(f) a=a.filter(x=>x.date==f);
+ let tot=a.reduce((s,x)=>s+parseFloat(x.total||0),0);
+ document.getElementById('kFiches').innerText=a.length;
+ document.getElementById('kTotal').innerText=tot;
+ document.getElementById('kAbs').innerText=a.length? a[a.length-1].abs : '0';
+ document.getElementById('histZineb').innerHTML=a.length?a.reverse().map(x=>`<div class="card zcard"><b>📅 ${x.date} | ${x.shift} | TOTAL: ${x.total} Kg</b><br><br>${x.detail}<br><br><b>❌ Absents:</b> ${x.abs||'Aucun'}<br><b>📝 Remarques:</b> ${x.rem}</div>`).join(''):'<div class="card">مازال حتى ورقة فهاد النهار</div>';
+}
+function effacer(){if(confirm('تمسح كاع الوراق؟')){localStorage.removeItem('fiches');voirZineb();}}
+</script></body></html>
